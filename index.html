@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLIED - AI Innovation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(45deg, #1a1a1a, #0f0f0f);
+            border-bottom: 2px solid #00ffff;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #b388ff;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border-bottom: 1px solid #b388ff;
+        }
+
+        nav a {
+            text-align: center;
+            padding: 15px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #b388ff;
+            text-shadow: 0 0 8px #b388ff;
+            margin-bottom: 20px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            border: 1px solid #00ffff;
+            box-shadow: 0 0 20px #00ffff;
+            transform: translateY(-5px);
+        }
+
+        .team-member h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        /* Project Grid and Card Styles */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .project-card:hover {
+            border: 1px solid #00ffff;
+            box-shadow: 0 0 20px #00ffff;
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #00ffff;
+            color: #0a0a0a;
+            box-shadow: 0 0 15px #00ffff;
+        }
+
+        /* Hero Image Style for Home Section */
+        .hero-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 2px solid #00ffff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ALLIED</h1>
+        <p>Innovating the Future with AI</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Updated Home Section -->
+        <section id="home">
+            <h2>Welcome to Allied</h2>
+            <p>Building AI solutions for tomorrow.</p>
+            
+            <a href="#projects" class="btn">Explore Our Projects</a>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Allied, we harness artificial intelligence to solve real-world challenges and create impactful projects.</p>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Senin - CEO</h3>
+                    <p>Visionary leader in AI strategy and technical innovation.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Naveen - CTO</h3>
+                    <p>Expert in Web development, machine learning and system architecture.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Devadathan - COO</h3>
+                    <p>Operations guru ensuring seamless project execution.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Abhishekh - CFO</h3>
+                    <p>Financial strategist driving sustainable growth and also expert in bargaining.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Sreelesh - CMO</h3>
+                    <p>Marketing innovator amplifying Allied’s reach.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Our AI Projects</h2>
+            <p>Explore our innovative AI-driven solutions:</p>
+            <div class="project-grid">
+                <!-- Project 1: Automated Attendance System -->
+                <div class="project-card">
+                    <img src="images/ezgif.com-gif-maker-6.webp" alt="Automated Attendance System" class="project-img">
+                    <h3>Automated Attendance System</h3>
+                    <p>A smart attendance system leveraging OpenCV and AI-driven facial recognition (YOLO) for real-time ID card detection and proxy prevention. It uses LBPH for accurate logging, ensuring efficiency in educational and corporate environments.</p>
+                    
+                </div>
+
+                <!-- Project 2: AI Pose Estimation -->
+                <div class="project-card">
+                    <img src="images/images.png" alt="AI Pose Estimation" class="project-img">
+                    <h3>AI Pose Estimation</h3>
+                    <p>An AI-powered pose estimation and calorie tracker for real-time gym workouts. Built using OpenCV and MediaPipe, it tracks exercises like bicep curls and provides feedback on form and calorie burn.</p>
+                    
+                </div>
+
+                <!-- Project 3: Intruder Detection -->
+                <div class="project-card">
+                    <img src="images/images (3).jpeg" alt="Intruder Detection" class="project-img">
+                    <h3>Intruder Detection</h3>
+                    <p>An AI-based security system that detects intruders using motion detection and facial recognition. Integrated with OpenCV and deep learning models, it sends real-time alerts to users.</p>
+                    
+                </div>
+
+                <!-- Project 4: Wedding Management -->
+                <div class="project-card">
+                    <img src="images/images.jpeg" alt="Wedding Management" class="project-img">
+                    <h3>Wedding Management</h3>
+                    <p>A comprehensive wedding planning tool powered by AI to manage guest lists, budgets, and schedules. Features include automated reminders and vendor coordination.</p>
+                    
+                </div>
+
+                <!-- Project 5: Budget Tracker -->
+                <div class="project-card">
+                    <img src="images/228.-Mastering-Your-Finances-Building-an-AI-Powered-Expense-Tracking-App-01.png" alt="Budget Tracker" class="project-img">
+                    <h3>Budget Tracker</h3>
+                    <p>An AI-driven budget tracker that analyzes spending patterns and provides personalized financial advice. Built with machine learning to predict future expenses.</p>
+                    
+                </div>
+
+                <!-- Project 6: Electricity Analyzer -->
+                <div class="project-card">
+                    <img src= "images/images (1).jpeg" alt="Electricity Analyzer" class="project-img">
+                    <h3>Electricity Analyzer</h3>
+                    <p>An AI-powered tool to monitor and analyze electricity usage in real-time. It provides insights to optimize consumption and reduce costs, using data visualization and predictive analytics.</p>
+                    <a href=https://github.com/Naveenp7/Electricity-management-software class="btn">View on GitHub</a>
+                </div>
+
+                <!-- Project 7: Innovative Sign Language Recognition -->
+                <div class="project-card">
+                    <img src="images/Screen+Shot+2023-10-12+at+6.16.34+PM.png" alt="Sign Language Recognition" class="project-img">
+                    <h3>Innovative Sign Language Recognition</h3>
+                    <p>An AI system that recognizes sign language gestures in real-time using computer vision and deep learning. It facilitates communication for the hearing-impaired community.</p>
+                </div>
+
+                <!-- Project 8: AI Dermatologist -->
+                <div class="project-card">
+                    <img src="images/images (2).jpeg" alt="AI Dermatologist" class="project-img">
+                    <h3>AI Dermatologist</h3>
+                    <p>An AI-powered dermatology tool that analyzes skin conditions from images using deep learning. It provides preliminary diagnoses and skincare recommendations.</p>
+                </div>
+            </div>
+            <a href="https://github.com/Naveenp7" class="btn">Visit Our GitHub</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to us at <a href="mailto:hello@allied.ai">naveensanthosh830@ gmail.com</a></p>
+        </section>
+        <section id="projects" class="projects">
+            <div class="project-grid">
+                <div class="project-card">
+                    
+                    <h3>Email</h3>
+                    <p>allied@gmail.com.</p>
+                    
+                </div>
+                <div class="project-card">
+                    
+                    <h3>Phone</h3>
+                    <p>+91 7994660275</p>
+                    
+                </div>
+                <div class="project-card">
+                    
+                    <h3>Location</h3>
+                    <p>Malappuram, Kerala</p>
+                    
+                </div>
+            
+            </div>
+        </section>
+        <footer class="container-fluid footer_section">
+            <p>
+              &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+              <a href="https://html.design/">Naveen</a>
+            </p>
+          </footer>
+
+
+
+    </div>
+</body>
+</html>
